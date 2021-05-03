@@ -2,7 +2,6 @@ export default {
   name: "program",
   title: "Program",
   type: "document",
-  icon,
   fields: [
     {
       name: "title",
@@ -23,7 +22,7 @@ export default {
       name: "workouts",
       title: "Workouts",
       type: "array",
-      of: [{ type: "reference", to: [{ type: "workout" }] }],
+      of: [{ type: "workoutWithWeek" }],
     },
     {
       name: "difficulty",

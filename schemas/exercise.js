@@ -1,6 +1,6 @@
 export default {
-  name: "workout",
-  title: "Workout",
+  name: "exercise",
+  title: "Exercise",
   type: "document",
   fields: [
     {
@@ -16,17 +16,6 @@ export default {
         source: "title",
         maxLength: 100,
       },
-    },
-    {
-      name: "exercises",
-      title: "Exercises",
-      type: "array",
-      of: [{ type: "exerciseWithReps" }],
-    },
-    {
-      name: "calories",
-      title: "Calories",
-      type: "number",
     },
     {
       title: "Categories",
@@ -56,4 +45,7 @@ export default {
       type: "text",
     },
   ],
+  preview: {
+    select: { title: "title", media: "image" },
+  },
 };
