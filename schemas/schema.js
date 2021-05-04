@@ -9,13 +9,14 @@ import exercise from './exercise'
 import program from './program'
 import workout from './workout'
 
+import exerciseWithDuration from "./exerciseWithDuration";
 import exerciseWithReps from "./exerciseWithReps";
 import workoutWithWeek from "./workoutWithWeek";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
-  name: 'default',
+  name: "default",
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
@@ -27,7 +28,8 @@ export default createSchema({
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
+    exerciseWithDuration,
     exerciseWithReps,
-    workoutWithWeek
+    workoutWithWeek,
   ]),
-})
+});

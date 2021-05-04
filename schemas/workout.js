@@ -21,7 +21,7 @@ export default {
       name: "exercises",
       title: "Exercises",
       type: "array",
-      of: [{ type: "exerciseWithReps" }],
+      of: [{ type: "exerciseWithReps" }, { type: "exerciseWithDuration" }],
     },
     {
       name: "calories",
