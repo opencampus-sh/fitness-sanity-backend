@@ -22,7 +22,7 @@ export default {
       name: "workouts",
       title: "Workouts",
       type: "array",
-      of: [{ type: "workoutWithWeek" }],
+      of: [{ type: "workoutWithDay" }],
     },
     {
       name: "difficulty",

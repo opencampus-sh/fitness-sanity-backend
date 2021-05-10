@@ -11,7 +11,7 @@ import workout from './workout'
 
 import exerciseWithDuration from "./exerciseWithDuration";
 import exerciseWithReps from "./exerciseWithReps";
-import workoutWithWeek from "./workoutWithWeek";
+import workoutWithDay from "./workoutWithDay";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,6 +30,6 @@ export default createSchema({
     blockContent,
     exerciseWithDuration,
     exerciseWithReps,
-    workoutWithWeek,
+    workoutWithDay,
   ]),
 });

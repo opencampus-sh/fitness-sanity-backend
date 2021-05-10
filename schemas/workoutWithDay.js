@@ -1,10 +1,10 @@
 export default {
   type: "object",
-  name: "workoutWithWeek",
+  name: "workoutWithDay",
   fields: [
     {
-      title: "Week",
-      name: "week",
+      title: "Day",
+      name: "day",
       type: "number",
     },
     {
