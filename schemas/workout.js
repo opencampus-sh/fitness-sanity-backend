@@ -29,6 +29,11 @@ export default {
       type: "number",
     },
     {
+      name: "duration",
+      title: "Duration",
+      type: "number",
+    },
+    {
       title: "Categories",
       name: "categories",
       type: "array",
